@@ -40,7 +40,7 @@
         <mxCell id="-JphsKRF4HM28fqfrq-H-9" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;query microservice with client IPs: [&quot;1.10.142.60&quot;, &quot;1.1.1.1&quot;]&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="230" y="205" width="260" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="-JphsKRF4HM28fqfrq-H-11" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Receive flagged IP addresses:&lt;br&gt;1.10.142.60 is flagged via cisco threat feed&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="-JphsKRF4HM28fqfrq-H-11" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Receive flagged IP addresses:&lt;br&gt;1.10.142.60 is flagged as malicious&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="210" y="380" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="-JphsKRF4HM28fqfrq-H-14" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Flagging bad IP addresses&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
