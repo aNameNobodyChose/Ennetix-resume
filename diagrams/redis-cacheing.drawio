@@ -1,9 +1,72 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="26.2.15">
   <diagram name="Page-1" id="jeVTTyUw1mlgyO3qogG6">
-    <mxGraphModel>
+    <mxGraphModel dx="786" dy="451" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Hi7yPN0y7GdLFvs6n3Yv-1" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="140" width="260" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="Hi7yPN0y7GdLFvs6n3Yv-3" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Handle New query&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Hi7yPN0y7GdLFvs6n3Yv-1">
+          <mxGeometry x="70" y="20" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hi7yPN0y7GdLFvs6n3Yv-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="Hi7yPN0y7GdLFvs6n3Yv-1" source="Hi7yPN0y7GdLFvs6n3Yv-4" target="Hi7yPN0y7GdLFvs6n3Yv-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hi7yPN0y7GdLFvs6n3Yv-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="Hi7yPN0y7GdLFvs6n3Yv-1" source="Hi7yPN0y7GdLFvs6n3Yv-4" target="Hi7yPN0y7GdLFvs6n3Yv-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hi7yPN0y7GdLFvs6n3Yv-4" value="Frontend" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Hi7yPN0y7GdLFvs6n3Yv-1">
+          <mxGeometry x="10" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hi7yPN0y7GdLFvs6n3Yv-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="Hi7yPN0y7GdLFvs6n3Yv-1" source="Hi7yPN0y7GdLFvs6n3Yv-5" target="Hi7yPN0y7GdLFvs6n3Yv-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hi7yPN0y7GdLFvs6n3Yv-5" value="Elasticsearch" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Hi7yPN0y7GdLFvs6n3Yv-1">
+          <mxGeometry x="110" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hi7yPN0y7GdLFvs6n3Yv-6" value="Redis" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Hi7yPN0y7GdLFvs6n3Yv-1">
+          <mxGeometry x="120" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hi7yPN0y7GdLFvs6n3Yv-8" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;(1) Query elasticsearch&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Hi7yPN0y7GdLFvs6n3Yv-1">
+          <mxGeometry y="120" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hi7yPN0y7GdLFvs6n3Yv-10" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;(2) Receive Data&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Hi7yPN0y7GdLFvs6n3Yv-1">
+          <mxGeometry x="180" y="180" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hi7yPN0y7GdLFvs6n3Yv-12" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;(3) Cache data in Redis&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Hi7yPN0y7GdLFvs6n3Yv-1">
+          <mxGeometry x="70" y="280" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hi7yPN0y7GdLFvs6n3Yv-2" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Query Cacheing&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="80" width="240" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Hi7yPN0y7GdLFvs6n3Yv-13" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="140" width="260" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="Hi7yPN0y7GdLFvs6n3Yv-14" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Handle previously seen queries&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Hi7yPN0y7GdLFvs6n3Yv-13">
+          <mxGeometry x="70" y="20" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hi7yPN0y7GdLFvs6n3Yv-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="Hi7yPN0y7GdLFvs6n3Yv-13" source="Hi7yPN0y7GdLFvs6n3Yv-17" target="Hi7yPN0y7GdLFvs6n3Yv-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hi7yPN0y7GdLFvs6n3Yv-17" value="Frontend" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Hi7yPN0y7GdLFvs6n3Yv-13">
+          <mxGeometry x="10" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hi7yPN0y7GdLFvs6n3Yv-19" value="Elasticsearch" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Hi7yPN0y7GdLFvs6n3Yv-13">
+          <mxGeometry x="110" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hi7yPN0y7GdLFvs6n3Yv-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="Hi7yPN0y7GdLFvs6n3Yv-13" source="Hi7yPN0y7GdLFvs6n3Yv-20" target="Hi7yPN0y7GdLFvs6n3Yv-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Hi7yPN0y7GdLFvs6n3Yv-20" value="Redis" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Hi7yPN0y7GdLFvs6n3Yv-13">
+          <mxGeometry x="110" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Hi7yPN0y7GdLFvs6n3Yv-23" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;(1) Access cached data from redis&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Hi7yPN0y7GdLFvs6n3Yv-13">
+          <mxGeometry x="70" y="280" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Hi7yPN0y7GdLFvs6n3Yv-27" value="(2) Receive Data" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Hi7yPN0y7GdLFvs6n3Yv-13">
+          <mxGeometry x="180" y="190" width="60" height="30" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
